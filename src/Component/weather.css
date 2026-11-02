@@ -1,0 +1,138 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.weather-dashboard {
+  min-height: 100vh;
+  width: 100%;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.55)),
+    url("https://images.unsplash.com/photo-1470252649378-9c29740c9fa8");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: Arial, sans-serif;
+  color: white;
+  padding-top: 125px;
+}
+
+.weather-title {
+  text-align: center;
+  font-size: 52px;
+  font-weight: 600;
+  margin-bottom: 115px;
+}
+
+.weather-info {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 65px;
+  margin-bottom: 105px;
+}
+
+.weather-description {
+  width: 450px;
+  text-align: right;
+  font-size: 32px;
+  line-height: 1.25;
+}
+
+.weather-date {
+  border-left: 4px solid white;
+  padding-left: 65px;
+  min-height: 195px;
+  font-size: 32px;
+  line-height: 1.25;
+}
+
+.search-form {
+  display: flex;
+  width: 860px;
+  height: 58px;
+  margin: 0 auto;
+}
+
+.search-form input {
+  flex: 1;
+  min-width: 0;
+  border: none;
+  outline: none;
+  border-radius: 13px 0 0 13px;
+  background-color: #e0e0e0;
+  padding: 0 40px;
+  font-size: 19px;
+}
+
+.search-form button {
+  width: 65px;
+  border: none;
+  border-radius: 0 13px 13px 0;
+  background-color: #ffad5c;
+  cursor: pointer;
+  font-size: 28px;
+}
+
+.search-form button:hover {
+  background-color: #ff982f;
+}
+
+.weather-result {
+  width: 860px;
+  margin: 40px auto;
+  padding: 25px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 12px;
+}
+
+.weather-error {
+  text-align: center;
+  margin-top: 20px;
+  color: white;
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  .weather-dashboard {
+    padding: 70px 20px;
+  }
+
+  .weather-title {
+    font-size: 36px;
+    margin-bottom: 60px;
+  }
+
+  .weather-info {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 60px;
+  }
+
+  .weather-description {
+    width: 100%;
+    text-align: center;
+    font-size: 23px;
+  }
+
+  .weather-date {
+    border-left: none;
+    border-top: 3px solid white;
+    padding: 20px 0 0;
+    min-height: auto;
+    text-align: center;
+    font-size: 23px;
+  }
+
+  .search-form {
+    width: 100%;
+  }
+
+  .weather-result {
+    width: 100%;
+  }
+}
